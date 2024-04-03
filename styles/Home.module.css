@@ -2,4 +2,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 85px;
+  padding-top: 15%;
+}
+
+.Main-Nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pressMeButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3%;
+}
+
+.contactMe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5%;
 }
