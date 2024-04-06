@@ -1,27 +1,83 @@
-.Main-Title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 85px;
-  padding-top: 15%;
-}
-
 .Main-Nav {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.pressMeButton {
+.main-Container-Wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 3%;
+  gap: 31%;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.hi-Title {
+  font-size: 40px;
+}
+
+.Main-Title {
+  font-size: 90px;
+}
+
+.welcomeButtonContainer {
+  padding-top: 29%;
 }
 
 .contactMe {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.phoneNumberContainer {
+  display: flex;
+  position: absolute;
+  right: 0;
+  margin-right: 1%;
+}
+
+.phoneIcon {
+  padding-bottom: 3%;
+}
+
+.phoneNumberContainer:hover {
+  border-bottom: 1px solid white;
+}
+
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 12%;
+}
+
+.aboutMeTitle {
+  font-size: 40px;
+}
+
+.aboutMeText {
+  width: 25%;
+  font-size: 20px;
+  text-align: justify;
+  word-spacing: 5px;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  width: 100%;
   padding-top: 5%;
+}
+
+.cardsContainer > * {
+  cursor: pointer;
 }

@@ -12,7 +12,7 @@ export default function SimpleBottomNavigation() {
   return (
     <Box
       sx={{
-        width: '100%',
+        width: '26%',
         '& :hover': {
           backgroundColor: '#461d25',
           transition: '0.5s',
@@ -24,18 +24,19 @@ export default function SimpleBottomNavigation() {
     >
       <BottomNavigation
         sx={{
+          borderBottom: '1px solid white',
           zIndex: 1,
           '& :hover': {
             backgroundColor: '#756565',
             transition: '0.4s',
           },
-          backgroundColor: '#3e1720',
+          backgroundColor: 'transparent',
           '& .Mui-selected': {
             '& svg': {
               color: 'white',
             },
             color: 'white',
-            backgroundColor: '#0c0a0b',
+            backgroundColor: 'var(--main-color)',
             transition: 'background-color 0.5s ease',
           },
         }}
