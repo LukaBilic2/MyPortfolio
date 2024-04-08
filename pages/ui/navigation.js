@@ -5,6 +5,7 @@ import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import DesktopWindowsOutlinedIcon from '@mui/icons-material/DesktopWindowsOutlined';
 import SportsSoccerOutlinedIcon from '@mui/icons-material/SportsSoccerOutlined';
+import ScrollToElement from '../lib/scrollnavigation';
 
 export default function SimpleBottomNavigation() {
   const [value, setValue] = React.useState(0);
@@ -50,6 +51,8 @@ export default function SimpleBottomNavigation() {
           sx={{ color: 'white' }}
           label="About"
           icon={<AccountCircleOutlinedIcon />}
+          id="scrollButton"
+          onClick={ScrollToElement}
         />
         <BottomNavigationAction
           sx={{ color: 'white' }}

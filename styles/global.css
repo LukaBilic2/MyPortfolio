@@ -32,14 +32,16 @@ img {
   max-width: 100%;
   height: auto;
 } */
-/* 
 
-
-css for card file */
+/* css for card file */
 .card {
   overflow: visible;
-  width: 190px;
-  height: 254px;
+  width: 21%;
+  height: 43vh;
+}
+
+.titleCard {
+  font-size: 20px;
 }
 
 .content {
@@ -87,7 +89,7 @@ css for card file */
     #ff9966,
     transparent
   );
-  animation: rotation_481 5000ms infinite linear;
+  animation: rotation_481 6s infinite linear;
 }
 
 .back-content {
@@ -134,37 +136,12 @@ css for card file */
 }
 
 .front-content .badge {
-  background-color: #00000055;
+  background-color: #0000008c;
   padding: 2px 10px;
   border-radius: 10px;
   backdrop-filter: blur(2px);
   width: fit-content;
-}
-
-.description {
-  box-shadow: 0px 0px 10px 5px #00000088;
-  width: 100%;
-  padding: 10px;
-  background-color: #00000099;
-  backdrop-filter: blur(5px);
-  border-radius: 5px;
-}
-
-.title {
-  font-size: 11px;
-  max-width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.title p {
-  width: 50%;
-}
-
-.card-footer {
-  color: #ffffff88;
-  margin-top: 5px;
-  font-size: 8px;
+  font-size: 25px;
 }
 
 .front .img {
@@ -181,26 +158,19 @@ css for card file */
   border-radius: 50%;
   background-color: #ffbb66;
   position: relative;
-  filter: blur(15px);
+  filter: blur(5px);
   animation: floating 2600ms infinite linear;
+  left: 250px;
+  top: 150px;
 }
 
 #bottom {
   background-color: #ff8866;
   left: 50px;
-  top: 0px;
+  top: 150px;
   width: 150px;
   height: 150px;
   animation-delay: -800ms;
-}
-
-#right {
-  background-color: #ff2233;
-  left: 160px;
-  top: -80px;
-  width: 30px;
-  height: 30px;
-  animation-delay: -1800ms;
 }
 
 @keyframes floating {
