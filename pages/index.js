@@ -5,6 +5,9 @@ import Contact from './ui/contact';
 import BackgroundGradient from './ui/backgroundGradient';
 import CallOutlinedIcon from '@mui/icons-material/CallOutlined';
 import Card from './ui/card';
+import Link from 'next/link';
+import SimpleGrow from './ui/projects';
+import ScrollToElement from './lib/scrollnavigation';
 
 const Home = () => {
   return (
@@ -37,7 +40,7 @@ const Home = () => {
           </div>
 
           <div className={styles.welcomeButtonContainer}>
-            <PlayButton></PlayButton>
+            <PlayButton text="Welcome!"></PlayButton>
           </div>
         </div>
         <section className={styles.aboutContainer}>
@@ -58,12 +61,25 @@ const Home = () => {
             <p>Language: Croatian (Native), English (B2)</p>
           </div>
 
+          <div className={styles.cvButton}>
+            <Link
+              href="./LukaBilicCVEng.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <PlayButton
+                className={styles.cvButtonSize}
+                text="Open CV"
+              ></PlayButton>
+            </Link>
+          </div>
+
           <div className={styles.cardsContainer}>
             <Card
               title="Skill set"
               text={
                 <>
-                  Armed with skills in React, Next.js, JavaScript, HTML, and
+                  Equipped with skills in React, Next.js, JavaScript, HTML, and
                   CSS,
                   <br />
                   I specialize in building intuitive user interfaces and dynamic
@@ -98,9 +114,7 @@ const Home = () => {
                 <>
                   With a strong foundation in version control using Git, <br />{' '}
                   I collaborate effectively with team members to manage and
-                  streamline the development process. <br /> <br /> Let's
-                  collaborate and turn your ideas into exceptional digital
-                  experiences!
+                  streamline the development process.
                 </>
               }
               svg={
@@ -196,6 +210,18 @@ const Home = () => {
             <Contact></Contact>
           </div>
         </section>
+
+        <BackgroundGradient>
+          <sectiom>
+            <h2 className={styles['socials-Title']} id="targetProject">
+              Projects
+            </h2>
+
+            <div className={styles.projectsContainer}>
+              <SimpleGrow></SimpleGrow>
+            </div>
+          </sectiom>
+        </BackgroundGradient>
       </BackgroundGradient>
     </div>
   );

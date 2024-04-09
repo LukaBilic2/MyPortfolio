@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from '../../styles/button.module.css';
 
-const PlayButton = () => {
+const PlayButton = ({ text, className }) => {
   return (
-    <button className={styles.playButton}>
-      Welcome!
+    <button className={`${styles.playButton} ${className}`}>
+      {text}
       <div className={styles['star-1']}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
