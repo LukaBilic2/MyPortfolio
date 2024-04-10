@@ -1,3 +1,5 @@
+// first try to make ScrollToElement, not using this file
+
 export const ScrollToElement = () => {
   if (typeof window !== 'undefined') {
     const handleClick = () => {

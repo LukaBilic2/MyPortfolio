@@ -20,7 +20,13 @@ body {
   height: 100vh;
   color: white;
   background-color: #0c0a0b;
-  overflow-x: hidden;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
 }
 
 /* a {

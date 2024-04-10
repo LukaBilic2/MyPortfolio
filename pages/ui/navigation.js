@@ -5,7 +5,9 @@ import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import DesktopWindowsOutlinedIcon from '@mui/icons-material/DesktopWindowsOutlined';
 import SportsSoccerOutlinedIcon from '@mui/icons-material/SportsSoccerOutlined';
-import { ScrollToElement, ScrollToProject } from '../lib/scrollnavigation';
+
+export const aboutRef = React.createRef();
+export const projectsRef = React.createRef();
 
 export default function SimpleBottomNavigation() {
   const [value, setValue] = React.useState(null);
@@ -52,14 +54,18 @@ export default function SimpleBottomNavigation() {
           label="About"
           icon={<AccountCircleOutlinedIcon />}
           id="scrollButton"
-          onClick={ScrollToElement}
+          onClick={() =>
+            aboutRef.current.scrollIntoView({ behavior: 'smooth' })
+          }
         />
         <BottomNavigationAction
           sx={{ color: 'white' }}
           label="Projects"
           icon={<DesktopWindowsOutlinedIcon />}
           id="scrollProject"
-          onClick={ScrollToProject}
+          onClick={() =>
+            projectsRef.current.scrollIntoView({ behavior: 'smooth' })
+          }
         />
         <BottomNavigationAction
           sx={{ color: 'white' }}
