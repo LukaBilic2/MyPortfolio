@@ -6,8 +6,8 @@ const IndexPage = () => {
     <div className={styles.startContainer}>
       <Link href="/portfolio" className={styles.linkElement}>
         <button className={styles.startButton}>
-          <div className={styles['svg-wrapper-1']}>
-            <div className={styles['svg-wrapper']}>
+          <div>
+            <div className={styles.svgWrapper}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"

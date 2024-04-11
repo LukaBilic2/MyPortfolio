@@ -5,7 +5,7 @@ const PlayButton = ({ text, className }) => {
   return (
     <button className={`${styles.playButton} ${className}`}>
       {text}
-      <div className={styles['star-1']}>
+      <div className={styles.starOne}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           xmlSpace="preserve"
@@ -24,7 +24,7 @@ const PlayButton = ({ text, className }) => {
           </g>
         </svg>
       </div>
-      <div className={styles['star-2']}>
+      <div className={styles.starTwo}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           xmlSpace="preserve"
@@ -43,7 +43,7 @@ const PlayButton = ({ text, className }) => {
           </g>
         </svg>
       </div>
-      <div className={styles['star-3']}>
+      <div className={styles.starThree}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           xmlSpace="preserve"
@@ -62,7 +62,7 @@ const PlayButton = ({ text, className }) => {
           </g>
         </svg>
       </div>
-      <div className={styles['star-4']}>
+      <div className={styles.starFour}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           xmlSpace="preserve"
@@ -81,7 +81,7 @@ const PlayButton = ({ text, className }) => {
           </g>
         </svg>
       </div>
-      <div className={styles['star-5']}>
+      <div className={styles.starFive}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           xmlSpace="preserve"
@@ -100,7 +100,7 @@ const PlayButton = ({ text, className }) => {
           </g>
         </svg>
       </div>
-      <div className={styles['star-6']}>
+      <div className={styles.starSix}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           xmlSpace="preserve"

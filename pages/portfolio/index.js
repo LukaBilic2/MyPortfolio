@@ -5,7 +5,7 @@ import SimpleBottomNavigation, {
 } from '../ui/navigation';
 import PlayButton from '../ui/button';
 import Contact from '../ui/contact';
-import BackgroundGradient from '../ui/backgroundGradient';
+import BackgroundGradient from '../ui/backgroundgradient';
 import CallOutlinedIcon from '@mui/icons-material/CallOutlined';
 import Card from '../ui/card';
 import Link from 'next/link';
@@ -26,7 +26,7 @@ const Home = () => {
       />
 
       <BackgroundGradient>
-        <div className={styles['Main-Nav']}>
+        <div className={styles.MainNav}>
           <SimpleBottomNavigation></SimpleBottomNavigation>
           <div className={styles.phoneNumberContainer}>
             <CallOutlinedIcon className={styles.phoneIcon} />
@@ -34,10 +34,10 @@ const Home = () => {
           </div>
         </div>
 
-        <div className={styles['main-Container-Wrapper']}>
+        <div className={styles.mainContainerWrapper}>
           <div className={styles.mainContainer}>
-            <h2 className={styles['hi-Title']}>Hi,</h2>
-            <h1 className={styles['Main-Title']}>I'm Luka Bilić</h1>
+            <h2 className={styles.hiTitle}>Hi,</h2>
+            <h1 className={styles.MainTitle}>I'm Luka Bilić</h1>
             <h2>Front-End React Developer</h2>
           </div>
 
@@ -207,7 +207,7 @@ const Home = () => {
         </section>
 
         <section>
-          <h2 className={styles['socials-Title']}>Connect with me!</h2>
+          <h2 className={styles.socialsTitle}>Connect with me!</h2>
           <div className={styles.contactMe}>
             <Contact></Contact>
           </div>
@@ -215,7 +215,7 @@ const Home = () => {
 
         <BackgroundGradient>
           <section>
-            <h2 className={styles['socials-Title']} ref={projectsRef}>
+            <h2 className={styles.socialsTitle} ref={projectsRef}>
               Projects
             </h2>
 
