@@ -1,3 +1,13 @@
 .image {
   max-width: 100%;
+  transition: scale 2s;
+}
+
+.hoverEffect {
+  transition: transform 1s ease, filter 0.3s ease;
+}
+
+.hoverEffect:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0px 10px 15px #ffffff);
 }
