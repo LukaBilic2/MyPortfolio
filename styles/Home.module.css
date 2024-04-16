@@ -1,7 +1,8 @@
 .MainNav {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 1%;
 }
 
 .mainContainerWrapper {
@@ -30,9 +31,6 @@
 
 .phoneNumberContainer {
   display: flex;
-  position: absolute;
-  right: 0;
-  margin-right: 1%;
 }
 
 .phoneIcon {
@@ -48,7 +46,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 12%;
+  padding-top: 1%;
 }
 
 .aboutMeTitle {
@@ -116,4 +114,12 @@
   justify-content: center;
   align-items: center;
   padding: 5% 0;
+}
+
+.hobbySection {
+  display: flex;
+  gap: 5%;
+  justify-content: center;
+  padding-bottom: 18%;
+  padding-top: 5%;
 }

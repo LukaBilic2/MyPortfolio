@@ -8,6 +8,7 @@ import SportsSoccerOutlinedIcon from '@mui/icons-material/SportsSoccerOutlined';
 
 export const aboutRef = React.createRef();
 export const projectsRef = React.createRef();
+export const hobbiesRef = React.createRef();
 
 export default function SimpleBottomNavigation() {
   const [value, setValue] = React.useState(null);
@@ -69,8 +70,11 @@ export default function SimpleBottomNavigation() {
         />
         <BottomNavigationAction
           sx={{ color: 'white' }}
-          label="Hobby"
+          label="Hobbies"
           icon={<SportsSoccerOutlinedIcon />}
+          onClick={() =>
+            hobbiesRef.current.scrollIntoView({ behavior: 'auto' })
+          }
         />
       </BottomNavigation>
     </Box>

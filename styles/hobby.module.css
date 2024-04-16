@@ -1,0 +1,29 @@
+.imagesWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1%;
+}
+
+.imageTitleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.hobbyImage {
+  transition: all 0.3s ease;
+}
+
+.hobbyImage:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+.imagesContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px !important;
+}

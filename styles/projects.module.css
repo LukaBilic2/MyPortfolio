@@ -5,9 +5,23 @@
 
 .hoverEffect {
   transition: transform 1s ease, filter 0.3s ease;
+  text-decoration: none;
 }
 
 .hoverEffect:hover {
   transform: scale(1.1);
   filter: drop-shadow(0px 10px 15px #ffffff);
+}
+
+.projectTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding-top: 3%;
+}
+
+.projectBox {
+  display: flex;
+  flex-direction: column;
 }

@@ -8,14 +8,24 @@ import styles from '../../styles/projects.module.css';
 import Link from 'next/link';
 
 const icon = (
-  <Paper sx={{ width: '100%', height: '100%' }} elevation={4}>
+  <Paper
+    sx={{ width: '100%', height: '100%' }}
+    elevation={4}
+    className={styles.projectBox}
+  >
     <img src="./josipastranica.avif" className={styles.image}></img>
+    <h2 className={styles.projectTitle}>Josipa Bilić Portfolio</h2>
   </Paper>
 );
 
 const secondicon = (
-  <Paper sx={{ width: '100%', height: '100%' }} elevation={4}>
+  <Paper
+    sx={{ width: '100%', height: '100%' }}
+    elevation={4}
+    className={styles.projectBox}
+  >
     <img src="./dbzstranica.avif" className={styles.image}></img>
+    <h2 className={styles.projectTitle}>Dragon Ball API</h2>
   </Paper>
 );
 
