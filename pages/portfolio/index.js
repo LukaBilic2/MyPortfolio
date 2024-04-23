@@ -14,6 +14,7 @@ import Link from 'next/link';
 import SimpleGrow from '../ui/projects';
 import Hobby from '../ui/hobby';
 import Avatar from '@mui/material/Avatar';
+import Footer from '../ui/footer';
 
 const Home = () => {
   return (
@@ -38,7 +39,7 @@ const Home = () => {
           <div className={styles.phoneNumberContainer}>
             <CallOutlinedIcon className={styles.phoneIcon} />
 
-            <p>+385 0995997139</p>
+            <p>+385 995997139</p>
           </div>
         </div>
 
@@ -68,7 +69,7 @@ const Home = () => {
         <div className={styles.myInfo}>
           <p>Age: 22</p>
           <p>Email: bilicluka1@gmail.com</p>
-          <p>Phone: +385-099-599-7139</p>
+          <p>Phone: +385-99-599-7139</p>
           <p>From: Croatia - Stupnik</p>
           <p>Language: Croatian (Native), English (B2)</p>
         </div>
@@ -242,6 +243,8 @@ const Home = () => {
           <Hobby></Hobby>
         </div>
       </section>
+
+      <Footer></Footer>
     </div>
   );
 };

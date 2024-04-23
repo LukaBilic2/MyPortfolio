@@ -1,12 +1,38 @@
 import * as React from 'react';
+import Backdrop from '@mui/material/Backdrop';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import styles from '../../styles/hobby.module.css';
 
 const StandardImageList = () => {
+  const [open, setOpen] = React.useState(false);
+  const handleClose = () => {
+    setOpen(false);
+  };
+  const handleOpen = () => {
+    setOpen(true);
+  };
+
   return (
     <div className={styles.imagesWrapper}>
-      <div className={styles.imageTitleContainer}>
+      <Backdrop
+        sx={{ color: 'white', zIndex: (theme) => theme.zIndex.drawer + 1 }}
+        open={open}
+        onClick={handleClose}
+        className={styles.backdropFont}
+      >
+        Active: <br />
+        Running, karting and football are my go to for health benefits, cardio
+        and fun! <br /> <br />
+        Learning: <br /> Coding, audiobooks and gaming are my go to for
+        improving my cognitive abilities and problem-solving.
+        <br />
+        <br /> Childhood: <br /> Yu-Gi-Oh and Dragon Ball are my favourite shows
+        from my childhood. Once a year I go back and visit my childhood
+        memories.
+      </Backdrop>
+
+      <div className={styles.imageTitleContainer} onClick={handleOpen}>
         <h2>Active</h2>
         <ImageList
           sx={{
@@ -32,7 +58,7 @@ const StandardImageList = () => {
         </ImageList>
       </div>
 
-      <div className={styles.imageTitleContainer}>
+      <div className={styles.imageTitleContainer} onClick={handleOpen}>
         <h2>Learning</h2>
         <ImageList
           sx={{
@@ -58,7 +84,7 @@ const StandardImageList = () => {
         </ImageList>
       </div>
 
-      <div className={styles.imageTitleContainer}>
+      <div className={styles.imageTitleContainer} onClick={handleOpen}>
         <h2>Childhood</h2>
 
         <ImageList
